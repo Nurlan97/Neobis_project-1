@@ -1,0 +1,103 @@
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    padding: 0;
+
+
+    &__logo-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    &__logo-text {
+        margin: 0;
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &-bold {
+            color: #0B132A;
+            font-family: Rubik;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+
+    &__nav-list {
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    &__nav-item>a {
+        text-decoration: none;
+        display: block;
+        color: #4F5665;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__registration {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+    }
+
+    &__registration-signIn {
+        text-decoration: none;
+        border: none;
+        display: block;
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__registration-signUp {
+        text-decoration: none;
+        border: 1px solid #F53855;
+        padding: 13px 45px;
+        border-radius: 50px;
+        color: #F53855;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: 0.5s;
+
+        &:hover {
+            background: #F53838;
+            color: #FFF;
+            cursor: pointer;
+        }
+    }
+
+
+}

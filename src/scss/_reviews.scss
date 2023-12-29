@@ -1,0 +1,191 @@
+.reviews {
+
+
+    &__title {
+        color: #0B132A;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        /* 142.857% */
+        margin: 124px 0 0;
+
+    }
+
+    &__subtitle {
+        color: #4F5665;
+        text-align: center;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        /* 187.5% */
+        padding: 0;
+        margin: 20px 0 0;
+    }
+
+    &__carousel-cards {
+        display: flex;
+        gap: 50px;
+        margin-top: 60px;
+
+
+    }
+
+    &__carousel {
+        &-card {
+            // width: 400px;
+            // height: 230px;
+            // flex-shrink: 0;
+            border-radius: 10px;
+            border: 2px solid #F53838;
+            background: #FFF;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-user-info {
+                display: flex;
+                gap: 20px;
+            }
+
+            &-img {
+                width: 50px;
+                height: 50px;
+            }
+
+            &-user-name {
+                margin: 0;
+                color: #0B132A;
+                text-align: center;
+                font-family: Rubik;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                /* 166.667% */
+
+            }
+
+            &-user-country {
+                margin: 0;
+                color: #4F5665;
+                font-family: Rubik;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                /* 214.286% */
+            }
+
+
+            &-rating {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+
+                &-score {
+                    margin: 0;
+                    color: #0B132A;
+                    font-family: Rubik;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px;
+                    /* 187.5% */
+                }
+
+                &-star {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            &-bottom {
+                margin-top: 20px;
+            }
+
+            &-comment {
+                margin: 0;
+                color: #0B132A;
+                font-family: Rubik;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                /* 187.5% */
+                display: flex;
+                width: 340px;
+                height: 100px;
+                flex-direction: column;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+        }
+
+        &-slide {
+            &-btns {
+                display: flex;
+                position: absolute;
+                margin-top: 75px;
+                right: 0;
+                bottom: -75px;
+                gap: 20px;
+                align-items: center;
+
+
+
+            }
+
+            &-prev{
+                fill: #F53838;
+                padding: 15px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid #F53838;
+                transition: 0.7s;
+                
+                &:hover{
+                    background: #F53838;
+                    .reviews__carousel-slide-prev-icon{
+                        fill: white;
+                    }
+                }
+
+            }
+
+            &-next{
+                fill: #F53838;
+                padding: 15px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid #F53838;
+                transition: 0.7s;
+                
+                &:hover{
+                    background: #F53838;
+                    .reviews__carousel-slide-next-icon{
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .owl-carousel .owl-stage-outer{
+        overflow: initial;
+    }
+
+
+}

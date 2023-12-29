@@ -1,0 +1,68 @@
+.subscribe {
+    margin: 185px 0 0;
+    position: absolute;
+    width: 100%;
+
+    &__container {
+        padding: 58.5px 70px;
+        // border: 1px solid #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        background: #FFF;
+
+    }
+
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+    }
+
+    &__title {
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 45px;
+        /* 128.571% */
+        margin: 0;
+    }
+
+    &__subtitle {
+        color: #4F5665;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        /* 187.5% */
+        margin: 0;
+    }
+
+    &__button {
+        color: #F53838;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        /* 156.25% */
+        padding: 17.5px 65px;
+        border-radius: 10px;
+        background: #FFF;
+        text-decoration: none;
+        display: block;
+        transition: 0.5s;
+        border: 2px solid #F53838;
+
+        &:hover {
+            color: #FFF;
+            background: #F53838;
+        }
+    }
+}
