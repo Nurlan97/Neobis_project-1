@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '../libs/owl_carousel/owl.carousel.min.css';
 @import '../libs/owl_carousel/owl.theme.default.css';
 * {
@@ -14,13 +15,23 @@
 }
 
 .header {
+  position: relative;
+}
+.header__container {
+  position: fixed;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 45px;
   padding: 0;
+  /*Временно для position: fixed;*/
+  width: 100%;
+  max-width: 1295px;
+  background: #FFF;
+  z-index: 1;
+  top: 0;
+  border-radius: 10px;
 }
 .header__logo-container {
   display: flex;
