@@ -176,10 +176,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #FFF;
   border-radius: 10px;
   background: #FFF;
   border-radius: 10px;
   padding: 0;
+  box-shadow: -12px 128px 56px -96px #0D1025;
 }
 .stats__column {
   width: 100%;
@@ -188,6 +190,28 @@
   align-items: center;
   justify-content: center;
   padding: 67.5px 91px;
+}
+.stats__column-user {
+  position: relative;
+}
+.stats__column-user::after {
+  content: "";
+  width: 0;
+  height: 126px;
+  border: 1px solid #EEEFF2;
+  position: absolute;
+  right: 0;
+}
+.stats__column-servers {
+  position: relative;
+}
+.stats__column-servers::before {
+  content: "";
+  width: 0;
+  height: 126px;
+  border: 1px solid #EEEFF2;
+  position: absolute;
+  left: 0;
 }
 .stats__column-img {
   width: 55px;
